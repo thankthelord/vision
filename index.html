@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Map Example</title>
+    <style>
+        .map-outline {
+            position: absolute;
+            border: 2px solid red;
+            pointer-events: none;
+        }
+        .map-container {
+            position: relative;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>API Lifecycle Image Map</h1>
-    <img src="https://voyager.postman.com/infographics/producer-consumer-api-lifecycle-postman.png" usemap="#apimap" alt="API Lifecycle">
+    <div class="map-container">
+        <img src="https://voyager.postman.com/infographics/producer-consumer-api-lifecycle-postman.png" usemap="#apimap" alt="API Lifecycle">
+        <!-- Outlined areas -->
+        <div class="map-outline" style="top: 460px; left: 214px; width: 59px; height: 65px;"></div>
+        <div class="map-outline" style="top: 400px; left: 315px; width: 67px; height: 62px;"></div>
+        <div class="map-outline" style="top: 433px; left: 97px; width: 66px; height: 67px;"></div>
+        <div class="map-outline" style="top: 335px; left: 31px; width: 74px; height: 64px;"></div>
+    </div>
 
     <map name="apimap">
         <area alt="Section 1" title="Go to Section 1" href="https://example.com/section1" coords="214,460,273,525" shape="rect">
