@@ -1,108 +1,38 @@
-<!DOCTYPE html>
+               <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Resume</title>
+    <title>Image Map Example</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+        .map-outline {
+            position: absolute;
+            border: 2px solid red;
+            pointer-events: none;
+            background-color: rgba(255, 0, 0, 0.5); /* Red highlight with transparency */
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .header, .section {
-            margin-bottom: 20px;
-        }
-        .header {
-            text-align: center;
-        }
-        .section-title {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-        .section-content {
-            margin-left: 20px;
-        }
-        .job, .education {
-            margin-bottom: 15px;
-        }
-        .job-title, .degree {
-            font-weight: bold;
-        }
-        .job-date, .education-date {
-            font-style: italic;
-            color: #666;
+        .map-container {
+            position: relative;
+            display: inline-block;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>John Doe</h1>
-            <p>Email: john.doe@example.com | Phone: (123) 456-7890</p>
-            <p>LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
-        </div>
-        <div class="section">
-            <h2 class="section-title">Summary</h2>
-            <div class="section-content">
-                <p>Experienced web developer with a strong background in front-end and back-end development. Skilled in HTML, CSS, JavaScript, and various web frameworks. Passionate about creating efficient and user-friendly web applications.</p>
-            </div>
-        </div>
-        <div class="section">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="section-content">
-                <div class="job">
-                    <p class="job-title">Senior Web Developer</p>
-                    <p class="job-date">ABC Company | Jan 2020 - Present</p>
-                    <ul>
-                        <li>Developed and maintained web applications using React and Node.js.</li>
-                        <li>Collaborated with designers to create responsive and visually appealing websites.</li>
-                        <li>Optimized website performance, reducing load times by 30%.</li>
-                    </ul>
-                </div>
-                <div class="job">
-                    <p class="job-title">Web Developer</p>
-                    <p class="job-date">XYZ Inc. | Jun 2017 - Dec 2019</p>
-                    <ul>
-                        <li>Implemented new features and fixed bugs in existing web applications.</li>
-                        <li>Worked with a team to migrate legacy systems to modern web technologies.</li>
-                        <li>Provided technical support and training to junior developers.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2 class="section-title">Education</h2>
-            <div class="section-content">
-                <div class="education">
-                    <p class="degree">Bachelor of Science in Computer Science</p>
-                    <p class="education-date">University of Somewhere | Sep 2013 - May 2017</p>
-                </div>
-            </div>
-        </div>
-        <div class="section">
-            <h2 class="section-title">Skills</h2>
-            <div class="section-content">
-                <ul>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React, Angular, Vue.js</li>
-                    <li>Node.js, Express, MongoDB</li>
-                    <li>Git, Docker, Jenkins</li>
-                </ul>
-            </div>
-        </div>
+    <h1>API Journey Image Map</h1>
+    <div class="map-container">
+        <img src="https://raw.githubusercontent.com/JosephARice/one-page/main/API%20Journey.PNG" usemap="#apimap" alt="API Journey">
+        <!-- Outlined areas -->
+        <div class="map-outline" style="top: 431px; left: 348px; width: 60px; height: 60px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 492px; left: 243px; width: 60px; height: 60px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 465px; left: 128px; width: 60px; height: 60px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 365px; left: 67px; width: 60px; height: 60px; border-radius: 50%;"></div>
     </div>
+
+    <map name="apimap">
+        <area alt="Section 1" title="Go to Google" href="https://google.com" coords="348,431,60" shape="circle">
+        <area alt="Section 2" title="Go to Google" href="https://google.com" coords="243,492,60" shape="circle">
+        <area alt="Section 3" title="Go to Google" href="https://google.com" coords="128,465,60" shape="circle">
+        <area alt="Section 4" title="Go to Google" href="https://google.com" coords="67,365,60" shape="circle">
+    </map>
 </body>
 </html>
