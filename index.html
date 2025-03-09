@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Map Example</title>
-    <style>
-        .map-outline {
-            position: absolute;
-            border: 2px solid red;
-            pointer-events: none;
-            background-color: rgba(255, 0, 0, 0.5); /* Red highlight with transparency */
-        }
-        .map-container {
-            position: relative;
-            display: inline-block;
-        }
-    </style>
+<style>
+    .map-outline {
+        position: absolute;
+        border: 2px solid red;
+        pointer-events: none;
+        background-color: rgba(255, 0, 0, 0.5); /* Red highlight with transparency */
+        z-index: 10; /* Ensure it is above other elements */
+    }
+    .map-container {
+        position: relative;
+        display: inline-block;
+    }
+</style>
 </head>
 <body>
     <h1>API Journey Image Map</h1>
