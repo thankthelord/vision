@@ -7,8 +7,9 @@
     <style>
         .map-outline {
             position: absolute;
-            border: 2px solid red;
+            border: 2px solid pink;
             pointer-events: none;
+            background-color: rgba(255, 192, 203, 0.5); /* Pink highlight with transparency */
         }
         .map-container {
             position: relative;
@@ -21,17 +22,17 @@
     <div class="map-container">
         <img src="https://voyager.postman.com/infographics/producer-consumer-api-lifecycle-postman.png" usemap="#apimap" alt="API Lifecycle">
         <!-- Outlined areas -->
-        <div class="map-outline" style="top: 460px; left: 214px; width: 59px; height: 65px;"></div>
-        <div class="map-outline" style="top: 400px; left: 315px; width: 67px; height: 62px;"></div>
-        <div class="map-outline" style="top: 433px; left: 97px; width: 66px; height: 67px;"></div>
-        <div class="map-outline" style="top: 335px; left: 31px; width: 74px; height: 64px;"></div>
+        <div class="map-outline" style="top: 402px; left: 319px; width: 58px; height: 58px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 463px; left: 214px; width: 58px; height: 58px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 435px; left: 99px; width: 60px; height: 60px; border-radius: 50%;"></div>
+        <div class="map-outline" style="top: 335px; left: 38px; width: 60px; height: 60px; border-radius: 50%;"></div>
     </div>
 
     <map name="apimap">
-        <area alt="Section 1" title="Go to Section 1" href="https://example.com/section1" coords="214,460,273,525" shape="rect">
-        <area alt="Section 2" title="Go to Section 2" href="https://example.com/section2" coords="315,400,382,462" shape="rect">
-        <area alt="Section 3" title="Go to Section 3" href="https://example.com/section3" coords="97,433,163,500" shape="rect">
-        <area alt="Section 4" title="Go to Section 4" href="https://example.com/section4" coords="31,335,105,399" shape="rect">
+        <area alt="Section 1" title="Go to Section 1" href="https://google.com" coords="348,431,29" shape="circle">
+        <area alt="Section 2" title="Go to Section 2" href="https://google.com" coords="243,492,29" shape="circle">
+        <area alt="Section 3" title="Go to Section 3" href="https://google.com" coords="128,465,30" shape="circle">
+        <area alt="Section 4" title="Go to Section 4" href="https://google.com" coords="67,365,30" shape="circle">
     </map>
 </body>
 </html>
